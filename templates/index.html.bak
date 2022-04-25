@@ -1,0 +1,21 @@
+
+{% extends 'base.html' %}
+{% block content %}
+
+{% load static %}
+<div class="flex-container">
+<div>
+<div class="card">
+		<h2>King Abdulaziz University Timetable</h2>
+		<p>Let our Artificial Intelligence schedule your classes.
+		Add your university class details and generate Time Table.</p>
+	<a href="{% url 'timetable' %}" class="btn">Generate Timetable</a>
+</div>
+</div>
+<div class="inner">
+		<div class="img">
+		<img src="{% static 'img/vect.jpg' %}" style="height: 500px;"></div>
+</div>
+	</div>
+{% endblock %}
+
